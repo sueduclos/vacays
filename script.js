@@ -68,12 +68,28 @@ function createVacationDestination(name, image, description) {
 
 var wantsToBook = prompt('Hey there! Do you want to add a desination?');
 
-if (wantsToBook === 'yes') {
+while (wantsToBook === 'yes') {
     var destinationName = prompt('Where do you want to go?');
     var destinationImage = prompt('What is the name of the file containing the image?');
     var destinationDescription = prompt('What is the description of the new destination?');
     var newDestination = createVacationDestination(destinationName, destinationImage, destinationDescription);
     document.write(newDestination);
+    wantsToBook = prompt('Do you want to add another destination?');
 }
+
+function showVacationDestinations() {
+    var numberOfVacationPhotos = prompt('How many photos do you want to see?');
+
+    for (var i = 0; i < numberOfVacationPhotos; ii++) {
+        document.write('<img src= https://fillmurray.com/g/200/300')
+    }
+}
+
+
+
+
+
+
+
 
 
